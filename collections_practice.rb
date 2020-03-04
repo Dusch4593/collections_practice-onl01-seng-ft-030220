@@ -4,13 +4,13 @@ def sort_array_asc(array)
 end
 
 def sort_array_desc(array)
-  return array.sort{|a, b|
+  array.sort{|a, b|
     b <=> a
   }
 end
 
 def sort_array_char_count(array)
-  return array.sort{|a, b|
+  array.sort{|a, b|
     a.length <=> b.length
   }
 end
@@ -22,7 +22,7 @@ def swap_elements(array)
     array[destination_index] = temp
     array
   end
-  return swap_elements_from_to(array, 1, 2)
+  swap_elements_from_to(array, 1, 2)
 end
 
 
